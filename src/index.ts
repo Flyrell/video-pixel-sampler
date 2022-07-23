@@ -11,7 +11,6 @@ const walkingSize = 8;
 
     const stream = await navigator.mediaDevices.getUserMedia({ video: true });
     const [ videoTrack ] = stream.getVideoTracks();
-    // const imageCapture = new ImageCapture(videoTrack);
 
     const canvas = document.createElement('canvas');
     canvas.style.position = 'absolute';
@@ -36,7 +35,6 @@ const walkingSize = 8;
     video.style.display = 'none';
     video.addEventListener('play', () => {
         const step = async () => {
-            // const bitmap = await imageCapture.grabFrame();
             context.clearRect(0, 0,canvas.width, canvas.height);
             context.drawImage(video, 0, 0, canvas.width, canvas.height);
             signal.receive().then(() => context.clearRect(0, 0,canvas.width, canvas.height));
@@ -57,7 +55,7 @@ const walkingSize = 8;
                 //     context.fill();
                 // });
 
-                // ASCII : SS 8, Q: 2
+                // ASCII
                 context.font = `${walkingSize}px Courier`;
                 const map = '.\'`^\\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$';
                 const char = map.charAt(Math.round((1 - percentage) * (map.length - 1)));

@@ -17,12 +17,7 @@
     "canvas-brightness-sampler": "^2.0.0"
   },
   "devDependencies": {
-    "@types/offscreencanvas": "^2019.7.0",
-    "@types/w3c-image-capture": "^1.0.6",
-    "add-asset-html-webpack-plugin": "^5.0.2",
-    "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
-    "mini-css-extract-plugin": "^2.6.1",
     "terser-webpack-plugin": "^5.3.3",
     "ts-loader": "^9.3.1",
     "ts-transform-paths": "^2.0.3",
