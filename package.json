@@ -14,9 +14,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "canvas-brightness-sampler": "^2.0.0"
+    "canvas-brightness-sampler": "^3.0.0"
   },
   "devDependencies": {
+    "@types/offscreencanvas": "^2019.7.0",
     "html-webpack-plugin": "^5.5.0",
     "terser-webpack-plugin": "^5.3.3",
     "ts-loader": "^9.3.1",
